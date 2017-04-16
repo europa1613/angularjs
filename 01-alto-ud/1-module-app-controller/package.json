@@ -1,0 +1,8 @@
+{
+  "name": "1-module-app-controller",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Arvind",
+  "license": "MIT",
+  "dependencies": {}
+}
