@@ -17,6 +17,10 @@ angularApp.controller('MainController', ['$scope', '$timeout', '$filter', functi
         ruleName: 'You must comply with all the rules.'
     }];
 
+    $scope.buttonClick = function() {
+        alert('Bisket:)');
+    }
+
     /*$scope.$watch('occupation', function(newValue, oldValue) {
         console.log('changed!');
         console.log('oldValue: ', oldValue);

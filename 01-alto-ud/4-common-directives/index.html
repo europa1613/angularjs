@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <!-- load bootstrap and fontawesome via CDN -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
     html,
     body {
@@ -52,7 +53,7 @@
                 Success!!!
             </div>
             <hr>
-            <h2>Are you... {{occuCaps()}}</h2>
+            <h2 ng-cloak>Are you... {{occuCaps()}}</h2>
             <hr>
             <h3>Rules</h3>
             <ul>
@@ -60,6 +61,7 @@
                     {{rule.ruleName}}
                 </li>
             </ul>
+            <input type="button" class="btn btn-primary" name="clickMe" value="Submit" ng-click="buttonClick()" />
         </div>
     </div>
 </body>
