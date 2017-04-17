@@ -8,9 +8,19 @@ angularApp.controller('MainController', ['$scope', '$timeout', '$filter', functi
     };
 
     $scope.$watch('occupation', function(newValue, oldValue) {
-    	console.log('changed!');
-    	console.log('oldValue: ', oldValue);
-    	console.log('newValue: ', newValue);
+        console.log('changed!');
+        console.log('oldValue: ', oldValue);
+        console.log('newValue: ', newValue);
     });
+
+    /*
+     * if model value changed outside of angular context, 
+     * angular will not know that the value changed
+     */
+
+     setTimeout(function() {
+     	$scope.occupation = 'setTimeout Change';
+     	console.log('scope changed from setTimeout');
+     }, 3000);
 
 }]);
