@@ -2,20 +2,19 @@
 var angularApp = angular.module('angularApp', []);
 
 // CONTROLLERS
-angularApp.controller('mainController', function($scope) {
-    console.log($scope);
-    console.log('hello');
+angularApp.controller('mainController', function($scope, $log, $filter) {
+    console.log($log);
+    $log.log('log');
+    $log.debug('debug');
+    $log.info('info');
+    $log.warn('warn');
+    $log.error('error');
 
     $scope.name = 'John, Snow';
-    $scope.occupation = 'Crow';
-    $scope.getName = function() {
-        return 'John, Snow';
-    }
+    $scope.nameCaps = $filter('uppercase')($scope.name);
+
+    $log.info($scope.name);
+    $log.info($scope.nameCaps);
+
+
 });
-
-function add(a, b, $scope) {
-    return a + b;
-}
-console.log(add.toString());
-
-console.log(angular.injector().annotate(add)); // ["a", "b", "$scope"]
