@@ -1,5 +1,5 @@
 // MODULE
-var angularApp = angular.module('angularApp', []);
+var angularApp = angular.module('angularApp', ['ngMessages']);
 
 // CONTROLLERS
 angularApp.controller('mainController', function($scope, $log, $filter) {
