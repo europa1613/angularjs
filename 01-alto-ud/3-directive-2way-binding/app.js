@@ -18,9 +18,11 @@ angularApp.controller('MainController', ['$scope', '$timeout', '$filter', functi
      * angular will not know that the value changed
      */
 
-     setTimeout(function() {
-     	$scope.occupation = 'setTimeout Change';
-     	console.log('scope changed from setTimeout');
-     }, 3000);
+    setTimeout(function() {
+        $scope.$apply(function() {
+            $scope.occupation = 'setTimeout Change';
+            console.log('scope changed from setTimeout');
+        });
+    }, 3000);
 
 }]);
