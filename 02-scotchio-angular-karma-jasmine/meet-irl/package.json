@@ -15,7 +15,9 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "^0.0.31",
     "morgan": "^1.8.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "phantomjs-polyfill-find": "^0.0.1"
   }
 }
