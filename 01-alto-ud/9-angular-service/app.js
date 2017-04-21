@@ -6,6 +6,10 @@ angularApp.config(function($routeProvider) {
             templateUrl: 'pages/main.html',
             controller: 'MainController'
         })
+        .when('/second', {
+            templateUrl: 'pages/second.html',
+            controller: 'SecondController'
+        })
         .when('/second/:param1', { //second' route will not work but /second/123 works
             templateUrl: 'pages/second.html',
             controller: 'SecondController'
@@ -25,10 +29,19 @@ angularApp.controller('MainController', ['$scope', '$location', '$log', 'MainSer
     $scope.name = mainService.name;
     $log.warn($location.path());
     $log.info(mainService.getFullName());
+
+    $scope.$watch('name', function() {
+        mainService.name = $scope.name;
+    });
 }]);
 
 angularApp.controller('SecondController', ['$scope', '$location', '$log', '$routeParams', 'MainService', function($scope, $location, $log, $routeParams, mainService) {
     $scope.name = mainService.name;
     $log.warn($location.path());
+
     $scope.param1 = $routeParams.param1;
+
+    $scope.$watch('name', function() {
+        mainService.name = $scope.name;
+    });
 }]);
