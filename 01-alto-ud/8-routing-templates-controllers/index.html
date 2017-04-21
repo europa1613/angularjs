@@ -30,13 +30,13 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/second"><i class="fa fa-home"></i> Second</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="container">
-        <div ng-controller="MainController">
-            <h1>{{name}}</h1>
+        <div ng-view>
         </div>
     </div>
 </body>
