@@ -61,7 +61,7 @@ angularApp.controller('SecondController', ['$scope', '$location', '$log', '$rout
 angularApp.directive('searchResult', function() {
     return {
         restrict: 'AECM', //A=Attribute, E=Element, AE=both(default), C=Class value, M=HTML Comment
-        template: ' <a href="#" class="list-group-item"><h4 class="list-group-item-heading">John, Snow</h4><p class="list-group-item-text">Winterfell, North of the Wall, Nights Watch.</p></a>',
+        templateUrl: 'directives/searchresult.html',
         replace: true
     }
 });
