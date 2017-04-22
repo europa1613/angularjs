@@ -45,8 +45,15 @@ angularApp.controller('MainController', ['$scope', '$location', '$log', 'MainSer
 
     $scope.person = {
         name: 'Arya, Stark',
-        address: 'Winterfell'
-    }
+        address: '555 Main St',
+        city: 'Brooklyn',
+        state: 'NC',
+        zip: 1111
+    };
+
+    $scope.getFullAddr = function(person) {
+        return person.address + ', ' + person.city + ', ' + person.state + ' ' + person.zip;
+    };
 }]);
 
 angularApp.controller('SecondController', ['$scope', '$location', '$log', '$routeParams', 'MainService', function($scope, $location, $log, $routeParams, mainService) {
@@ -88,6 +95,21 @@ angularApp.directive('searchResultTwo', function() {
         replace: true,
         scope: {
             personObject: '='
+        }
+    }
+});
+
+/*
+ * & - passing a method/function in directive's scope
+ */
+angularApp.directive('searchResultFn', function() {
+    return {
+        restrict:'E',
+        templateUrl: 'directives/searchResult3.html',
+        replace: true,
+        scope: {
+            personObject: '=',
+            fullAddress: '&'
         }
     }
 });

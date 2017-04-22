@@ -6,7 +6,9 @@
 <h3>Search Results</h3>
 <div class="list-group">
     <!-- {{}}=@ one way text binding  -->
-    <search-result person-name="{{person.name}}" person-address="{{person.address}}" ></search-result>
+    <search-result person-name="{{person.name}}" person-address="{{person.address}}"></search-result>
     <!-- person-object="person": '=' 2-way binding -->
     <search-result-two person-object="person"></search-result-two>
+    <!-- full-address="getFullAddr(aPerson)": '&' binding -->
+    <search-result-fn person-object="person" full-address="getFullAddr(aPerson)"></search-result-fn>
 </div>
