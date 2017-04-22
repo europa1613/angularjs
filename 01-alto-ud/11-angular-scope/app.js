@@ -69,7 +69,12 @@ angularApp.directive('searchResult', function() {
         templateUrl: 'directives/searchresult.html',
         replace: true,
         scope: {
-            
+            /* @ = text binding: value passed directly thru interpolation {{}}: meaning, this translates to person-name attr in search-result directive 
+             * and takes value as {{person.name}}, see main.html, 
+             * and in searchresult.html, the value can be used as {{personName}}
+             */
+            personName: '@',
+            personAddress: '@'
         }
     }
 });
