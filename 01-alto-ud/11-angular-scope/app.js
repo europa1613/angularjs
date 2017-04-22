@@ -67,9 +67,6 @@ angularApp.directive('searchResult', function() {
     return {
         restrict: 'AECM', //A=Attribute, E=Element, AE=both(default), C=Class value, M=HTML Comment
         templateUrl: 'directives/searchresult.html',
-        replace: true,
-        scope: {
-            
-        }
+        replace: true
     }
 });
