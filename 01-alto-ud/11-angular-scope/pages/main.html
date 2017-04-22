@@ -11,4 +11,6 @@
     <search-result-two person-object="person"></search-result-two>
     <!-- full-address="getFullAddr(aPerson)": '&' binding -->
     <search-result-fn person-object="person" full-address="getFullAddr(aPerson)"></search-result-fn>
+    <!-- display people using custom directive and ng-repeat -->
+    <search-result-fn ng-repeat="person in people" person-object="person" full-address="getFullAddr(aPerson)"></search-result-fn>
 </div>

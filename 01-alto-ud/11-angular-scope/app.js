@@ -54,6 +54,33 @@ angularApp.controller('MainController', ['$scope', '$location', '$log', 'MainSer
     $scope.getFullAddr = function(person) {
         return person.address + ', ' + person.city + ', ' + person.state + ' ' + person.zip;
     };
+
+    $scope.people = [{
+        name: 'John, Snow',
+        address: '555 Main St',
+        city: 'Brooklyn',
+        state: 'NC',
+        zip: 1111
+    }, {
+        name: 'Rob, Stark',
+        address: '555 Main St',
+        city: 'Brooklyn',
+        state: 'NC',
+        zip: 1111
+    }, {
+        name: 'Rickon, Stark',
+        address: '555 Main St',
+        city: 'Brooklyn',
+        state: 'NC',
+        zip: 1111
+    }, {
+        name: 'Brandon, Stark',
+        address: '555 Main St',
+        city: 'Brooklyn',
+        state: 'NC',
+        zip: 1111
+    }];
+
 }]);
 
 angularApp.controller('SecondController', ['$scope', '$location', '$log', '$routeParams', 'MainService', function($scope, $location, $log, $routeParams, mainService) {
@@ -104,7 +131,22 @@ angularApp.directive('searchResultTwo', function() {
  */
 angularApp.directive('searchResultFn', function() {
     return {
-        restrict:'E',
+        restrict: 'E',
+        templateUrl: 'directives/searchResult3.html',
+        replace: true,
+        scope: {
+            personObject: '=',
+            fullAddress: '&'
+        }
+    }
+});
+
+/*
+ * display people using custom directive and ng-repeat
+ */
+angularApp.directive('searchResultPeople', function() {
+    return {
+        restrict: 'E',
         templateUrl: 'directives/searchResult3.html',
         replace: true,
         scope: {
