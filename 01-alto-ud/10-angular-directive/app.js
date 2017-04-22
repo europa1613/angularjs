@@ -54,3 +54,16 @@ angularApp.controller('SecondController', ['$scope', '$location', '$log', '$rout
         mainService.name = $scope.name;
     });
 }]);
+
+
+
+
+angularApp.directive('searchResult', function() {
+    return {
+        template: ' <a href="#" class="list-group-item"><h4 class="list-group-item-heading">John, Snow</h4><p class="list-group-item-text">Winterfell, North of the Wall, Nights Watch.</p></a>'
+    }
+});
+
+
+
+
