@@ -5,6 +5,8 @@
 <hr>
 <h3>Search Results</h3>
 <div class="list-group">
-<!-- attribute and element directive are turned on by default -->
-    <search-result person-name="{{person.name}}" person-address="{{person.address}}"></search-result>
+    <!-- {{}}=@ one way text binding  -->
+    <search-result person-name="{{person.name}}" person-address="{{person.address}}" ></search-result>
+    <!-- person-object="person": '=' 2-way binding -->
+    <search-result-two person-object="person"></search-result-two>
 </div>
