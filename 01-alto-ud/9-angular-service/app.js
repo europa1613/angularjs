@@ -2,7 +2,7 @@ var angularApp = angular.module('angularApp', ['ngRoute']);
 
 angularApp.config(function($routeProvider) {
     $routeProvider
-        .when('/', {
+        .when('/main', {
             templateUrl: 'pages/main.html',
             controller: 'MainController'
         })
@@ -14,6 +14,14 @@ angularApp.config(function($routeProvider) {
             templateUrl: 'pages/second.html',
             controller: 'SecondController'
         })
+        /*
+         * /main in otherwise will automatically set the route to /#/main 
+         * localhost:8080 -> http://localhost:8080/#/main
+         */
+        .otherwise('/main', {
+            templateUrl: 'pages/main.html',
+            controller: 'MainController'
+        });
 });
 
 angularApp.service('MainService', function() {
