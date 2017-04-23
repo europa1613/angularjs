@@ -29,12 +29,16 @@ app.service('weatherService', function() {
     //http://api.openweathermap.org/data/2.5/forecast/daily?q=London&APPID=792c84bbd2ea68787c31341c2b182080&cnt=2
 });
 
-app.controller('HomeController', ['$scope', 'weatherService', function($scope, weatherService) {
+app.controller('HomeController', ['$scope', '$location', 'weatherService', function($scope, $location, weatherService) {
     $scope.city = weatherService.city;
 
     $scope.$watch('city', function() {
         weatherService.city = $scope.city;
     });
+
+    $scope.submit = function() {
+    	$location.path('/forecast');
+    }
 
 }]);
 
