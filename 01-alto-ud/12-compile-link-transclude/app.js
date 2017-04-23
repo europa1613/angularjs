@@ -152,6 +152,42 @@ angularApp.directive('searchResultPeople', function() {
         scope: {
             personObject: '=',
             fullAddress: '&'
+        },
+        /*
+         * compile method is called once
+         * whole pre and post are called each time the directive is rendered
+         * like in this case ng-repeat 
+         */
+        /*
+         * compile: change the directive on the fly b4 it gets used 
+         *      -> element.removeAttr('class') removes class attr for all directives.
+         * pre: Angular uses when nested directives are used; not safe to use, so commented below
+         * post: same as pre; but safer to use
+         */
+        compile: function(element, attrs) {
+            console.log('Compiling...');
+            console.log(element.html());
+            //can gain access to the view of the directive
+            //element.removeAttr('class');
+
+            return {
+                /*pre: function(scope, elements, attrs) {
+                    console.log('Pre linking...');
+                    console.log(scope);
+                    console.log(elements);
+                },*/
+
+                post: function(scope, elements, attrs) {
+                    console.log('Post linking...');
+                    console.log(scope);
+                    console.log(elements);
+                    if (scope.personObject.name === 'Rob, Stark' || scope.personObject.name === 'Rickon, Stark') {
+                        elements.addClass('list-group-item-danger');
+                    } else {
+                        elements.addClass('list-group-item-success');
+                    }
+                }
+            }
         }
     }
 });
