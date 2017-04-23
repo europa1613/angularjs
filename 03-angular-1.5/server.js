@@ -7,6 +7,7 @@ var port = process.env.PORT || 3000;
 
 app.use(favicon(path.join(__dirname + '/favicon.ico')));
 app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/')); // '/' will serve the lib folder for index.html to use
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'))
