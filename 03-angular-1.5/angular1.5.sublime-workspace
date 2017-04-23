@@ -108,10 +108,14 @@
 	},
 	"expanded_folders":
 	[
-		"/E/01-git-workspace/angularjs/03-angular-1.5"
+		"/Users/arvins-macpro/02-git-workspace/angularjs/03-angular-1.5",
+		"/Users/arvins-macpro/02-git-workspace/angularjs/03-angular-1.5/app"
 	],
 	"file_history":
 	[
+		"/Users/arvins-macpro/02-git-workspace/angularjs/03-angular-1.5/app/app.js",
+		"/Users/arvins-macpro/02-git-workspace/angularjs/03-angular-1.5/angular1.5.sublime-project",
+		"/Users/arvins-macpro/02-git-workspace/angularjs/03-angular-1.5/angular-favicon.ico",
 		"/E/01-git-workspace/angularjs/02-scotchio-angular-karma-jasmine/meet-irl/package.json",
 		"/E/01-git-workspace/angularjs/02-scotchio-angular-karma-jasmine/meet-irl/app/app.js",
 		"/E/01-git-workspace/angularjs/01-alto-ud/11-angular-scope/pages/main.html",
@@ -262,7 +266,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 193.0,

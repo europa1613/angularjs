@@ -6,11 +6,20 @@
     <!--  <link rel="shortcut icon" href="favicon.ico" />  -->
     <link rel="icon" href="http://localhost:3000/favicon.ico?v=2" />
     <script type="text/javascript" src="lib/angular.js"></script>
-   	<script type="text/javascript" src="app.js"></script>
+    
+
+    <script type="text/javascript" src="app.module.js"></script>
+    <script type="text/javascript" src="app.config.js"></script>
+    <script type="text/javascript" src="blog-list/blog-list.module.js"></script>
+    <script type="text/javascript" src="blog-list/blog-list.component.js"></script>
 </head>
 
 <body>
-    <h1>{{ "Hello" +  "World!"}} </h1>
+
+    <div ng-controller="BlogListController">
+    	<h1> {{title}} </h1>
+    	<button ng-click="click()">Click me</button>
+    </div>
 </body>
 
 </html>
