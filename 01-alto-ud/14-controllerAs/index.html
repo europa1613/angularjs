@@ -37,12 +37,17 @@
         <div ng-controller="parentController1">
             {{message}}
             <div ng-controller="childController1">
+                {{ $parent.message}}
+                <br>
                 {{message}}
             </div>
         </div>
+        <hr>
         <div ng-controller="parentController2">
             {{message}}
             <div ng-controller="childController2">
+                {{ $parent.message}}
+                <br>
                 {{message}}
             </div>
         </div>
