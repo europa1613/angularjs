@@ -1,6 +1,8 @@
 angular.module('blogList')
+    /*Component is a self contained module, with template and controller */
     .component('blogList', {
-        template: '<div><h1> {{title}} </h1><button ng-click="click()">Click me</button></div>',
+        //template: '<div><h1> {{title}} </h1><button ng-click="click()">Click me</button></div>',
+        templateUrl: 'blog-list/blog-list.html',
         controller: function($scope) {
             console.log('Hello Component!');
             $scope.title = 'Hi there! Component Here!';
