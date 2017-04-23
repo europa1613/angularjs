@@ -1,0 +1,273 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"person",
+				"personObject"
+			],
+			[
+				"re",
+				"replace"
+			],
+			[
+				"te",
+				"templateUrl"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"per",
+				"personObject"
+			],
+			[
+				"ret",
+				"restrict"
+			],
+			[
+				"ang",
+				"angularApp"
+			],
+			[
+				"j",
+				"joke"
+			],
+			[
+				"joke",
+				"jokesArray"
+			],
+			[
+				"rea",
+				"reactApp"
+			],
+			[
+				"pr",
+				"props"
+			],
+			[
+				"jo",
+				"johnSnow"
+			],
+			[
+				"sp",
+				"spreadOnObjects"
+			],
+			[
+				"log",
+				"logTitle"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 442.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/01-git-workspace/angularjs/03-angular-1.5"
+	],
+	"file_history":
+	[
+		"/E/01-git-workspace/angularjs/02-scotchio-angular-karma-jasmine/meet-irl/package.json",
+		"/E/01-git-workspace/angularjs/02-scotchio-angular-karma-jasmine/meet-irl/app/app.js",
+		"/E/01-git-workspace/angularjs/01-alto-ud/11-angular-scope/pages/main.html",
+		"/E/01-git-workspace/angularjs/01-alto-ud/11-angular-scope/app.js",
+		"/E/01-git-workspace/angularjs/01-alto-ud/11-angular-scope/index.html",
+		"/E/Dropbox/Learning/MongoDB/m101js/get_express/views/hello.html",
+		"/E/Dropbox/Learning/MongoDB/m101js/get_express/app.js",
+		"/E/01-git-workspace/angularjs/01-alto-ud/11-angular-scope/directives/searchResult3.html",
+		"/E/01-git-workspace/angularjs/01-alto-ud/11-angular-scope/directives/searchresult2.html",
+		"/E/01-git-workspace/angularjs/01-alto-ud/11-angular-scope/directives/searchresult.html",
+		"/C/Users/arvind1613/.gitconfig",
+		"/C/Users/arvind1613/.config/configstore/bower-github.json",
+		"/E/01-git-workspace/angularjs/01-alto-ud/10-angular-directive/directives/searchresult.html",
+		"/E/01-git-workspace/angularjs/01-alto-ud/10-angular-directive/index.html",
+		"/E/01-git-workspace/angularjs/01-alto-ud/10-angular-directive/app.js",
+		"/E/01-git-workspace/angularjs/01-alto-ud/10-angular-directive/pages/main.html",
+		"/E/01-git-workspace/angularjs/01-alto-ud/10-angular-directive/pages/second.html",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/.babelrc",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/webpack.config.js",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/app/index.js",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/app/modules/beyondES6/reactApplication.js",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/app/modules/generators/promisesWithGenerators.js",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/app/modules/beyondES6/components/JokesComponent.js",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/package.json",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/app/modules/beyondES6/spreadOnObjects.js",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/app/modules/deStructuringAssigment.js",
+		"/E/01-git-workspace/es6-babel-webpack-ud/es6-babel-webpack/app/modules/enhancedObjectProperties.js",
+		"/E/01-git-workspace/protractor/01-protractortestorg/README.md",
+		"/E/01-git-workspace/protractor/README.md",
+		"/E/01-git-workspace/protractor-test/todo.spec.js",
+		"/E/01-git-workspace/protractor-test/conf.js",
+		"/E/01-git-workspace/webpack/1-scotchio/dist/bundle.js",
+		"/E/01-git-workspace/webpack/1-scotchio/.gitignore",
+		"/E/01-git-workspace/webpack/1-scotchio/main.js",
+		"/E/01-git-workspace/webpack/1-scotchio/index.html",
+		"/E/01-git-workspace/webpack/1-scotchio/README.md",
+		"/E/01-git-workspace/webpack/.git/config"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "angular1.5.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 193.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

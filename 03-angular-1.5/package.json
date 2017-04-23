@@ -1,0 +1,13 @@
+{
+  "name": "03-angular-1.5",
+  "version": "1.0.0",
+  "description": "AngularJS 1.5 App",
+  "main": "app.js",
+  "author": "@Rvind",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.2"
+  }
+}
