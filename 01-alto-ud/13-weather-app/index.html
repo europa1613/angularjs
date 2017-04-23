@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" ng-app="weatherApp">
     <head>
         <title>AngularJS Weather Forecast SPA</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -8,10 +8,10 @@
         <!-- load bootstrap and fontawesome via CDN -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
         <style>
-            html, body, input, select, textarea
+            /*html, body, input, select, textarea
             {
                 font-size: 1.05em !important;
-            }
+            }*/
         </style>
         
         <!-- load angular via CDN -->
@@ -37,7 +37,7 @@
 		</header>
 
         <div class="container">
-
+            <div ng-view></div>
 
 		</div>
 
