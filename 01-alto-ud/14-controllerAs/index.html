@@ -35,20 +35,20 @@
     </header>
     <div class="container">
         <div ng-controller="parentController1">
-            {{message}}
+            {{parent1vm.message + 'parent1vm'}}
             <div ng-controller="childController1">
-                {{ $parent.message}}
+                {{ parent1vm.message}}
                 <br>
-                {{message}}
+                {{child1vm.message}}
             </div>
         </div>
         <hr>
         <div ng-controller="parentController2">
-            {{message}}
+            {{parent2vm.message}}
             <div ng-controller="childController2">
-                {{ $parent.message}}
+                {{ parent2vm.message}}
                 <br>
-                {{message}}
+                {{child2vm.message}}
             </div>
         </div>
     </div>
