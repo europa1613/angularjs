@@ -15,4 +15,9 @@
     <search-result-people ng-repeat="person in people" person-object="person" full-address="getFullAddr(aPerson)"></search-result-people>
     <!-- link() -->
     <search-result-link ng-repeat="person in people" person-object="person" full-address="getFullAddr(aPerson)"></search-result-link>
+    <!-- Transclusion: Include one document inside another -->
+    <search-result-transclude ng-repeat="person in people" person-object="person" full-address="getFullAddr(aPerson)">
+    	*This result maybe be redundant.
+    </search-result-transclude>
+
 </div>
