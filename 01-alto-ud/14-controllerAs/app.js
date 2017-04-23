@@ -11,11 +11,9 @@ myApp.controller('childController1', ['$scope', function($scope) {
 }]);
 
 myApp.controller('parentController2', ['$scope', function($scope) {
-	var parent2vm = $scope.parent2vm = {};
-	parent2vm.message = 'Parent 2 message.';
+	this.message = 'Parent 2 message.';
 }]);
 
 myApp.controller('childController2', ['$scope', function($scope) {
-	var child2vm = $scope.child2vm = {};
-	child2vm.message = 'Child 2 message.';
+	this.message = 'Child 2 message.';
 }]);

@@ -43,12 +43,14 @@
             </div>
         </div>
         <hr>
-        <div ng-controller="parentController2">
-            {{parent2vm.message}}
-            <div ng-controller="childController2">
+        <div ng-controller="parentController2 as parent2vm">
+            {{parent2vm.message + 'as'}}
+            <div ng-controller="childController2 as child2vm">
                 {{ parent2vm.message}}
                 <br>
                 {{child2vm.message}}
+                <br>
+                <input type="text" name="parent2vm.message" ng-model="parent2vm.message" />
             </div>
         </div>
     </div>
