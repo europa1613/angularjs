@@ -12,6 +12,8 @@ angular.module('blogList')
                 $scope.clicks += 1;
                 $scope.title = 'Clicked ' + $scope.clicks + ' times!';
             }
+
+            this.title = 'This title is from $ctrl object!';
         }
     });
 /*.controller('BlogListController', function($scope) {
