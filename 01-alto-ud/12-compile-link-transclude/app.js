@@ -191,3 +191,31 @@ angularApp.directive('searchResultPeople', function() {
         }
     }
 });
+
+/*
+ * link() -> shorthand version of above, compile + post
+ */
+angularApp.directive('searchResultLink', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'directives/searchResult3.html',
+        replace: true,
+        scope: {
+            personObject: '=',
+            fullAddress: '&'
+        },
+        /*
+         * link() gets called each time a directive is used
+         */
+        link: function(scope, elements, attrs) {
+            console.log('linking...');
+            console.log(scope);
+            console.log(elements);
+            if (scope.personObject.name === 'Rob, Stark' || scope.personObject.name === 'Rickon, Stark') {
+                elements.addClass('list-group-item-danger');
+            } else {
+                elements.addClass('list-group-item-success');
+            }
+        }
+    }
+});
