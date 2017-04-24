@@ -5,9 +5,13 @@ angular.module('myApp')
             .when('/', {
                 template: '<blog-list></blog-list>'
             })
+            .when('/about', {
+            	template: '<about-us></about-us>',
+            	//controller: 'AboutController'
+            })
             .when('/blog/1', {
                 template: '<h1>Hi /blog/1</h1>'
-            })
+            });
 
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(false);
     });
