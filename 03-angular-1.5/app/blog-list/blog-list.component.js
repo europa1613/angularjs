@@ -13,7 +13,19 @@ angular.module('blogList')
                 $scope.title = 'Clicked ' + $scope.clicks + ' times!';
             }
 
-            this.title = 'This title is from $ctrl object!';
+            var blogItems = [
+                { title: 'Game of Thrones', id: 1, description: 'This is a Book' },
+                { title: 'The Lord of the Rings', id: 2, description: 'This is a Book' },
+                { title: 'Sherlock Holmes', id: 3, description: 'This is a Book' },
+                { title: 'Harry Potter', id: 4, description: 'This is a Book' },
+                { title: 'The Dark Tower', id: 5, description: 'This is a Book' },
+                { title: 'Alien: Covenant', id: 6, description: 'This is a Book' }
+            ];
+
+
+            this.items = blogItems;
+
+            this.title = 'Blog Title';
         }
     });
 /*.controller('BlogListController', function($scope) {

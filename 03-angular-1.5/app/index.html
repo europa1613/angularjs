@@ -6,6 +6,8 @@
     <!--  <link rel="shortcut icon" href="favicon.ico" />  -->
     <link rel="icon" href="http://localhost:3000/favicon.ico?v=2" />
     <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-route.js"></script>
+    <script type="text/javascript" src="lib/angular-resource.js"></script>
     
 
     <script type="text/javascript" src="app.module.js"></script>
@@ -15,8 +17,7 @@
 </head>
 
 <body>
-
-    <blog-list></blog-list>
+	<div ng-view></div>
 </body>
 
 </html>

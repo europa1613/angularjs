@@ -1,1 +1,1 @@
-angular.module('myApp', ['blogList']);
+angular.module('myApp', ['ngResource', 'ngRoute', 'blogList']);

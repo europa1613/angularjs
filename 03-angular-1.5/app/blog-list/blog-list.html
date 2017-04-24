@@ -1,7 +1,13 @@
-<div>
+<!-- <div>
     <h1> {{title}} </h1>
-
     <button ng-click="click()">Click me</button>
-
-    <h2> {{$ctrl.title}} </h2>
+    <h2> {{$ctrl.title}} </h2> {{$ctrl.items}}
+</div> -->
+<h1> {{$ctrl.title}} </h1>
+<div>
+    <ul>
+        <li ng-repeat="item in $ctrl.items">
+            <a ng-href="#/blog/{{item.id}}">{{item.title}}</a>
+        </li>
+    </ul>
 </div>
