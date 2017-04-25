@@ -1,4 +1,7 @@
 angular.module('myApp', [])
 	.component('helloWorld', {
-		template: 'Hello World, Component!'
+		template: 'Hello {{$ctrl.name}}',
+		bindings: {
+			name: '@'
+		}
 	});
