@@ -24,9 +24,9 @@ ajv@^4.9.1:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
-angular-mocks@^1.6.4:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.6.4.tgz#47fdf50921cf24fb489f100a8cf2ad99d0538f40"
+angular-mocks@1.5.8:
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.5.8.tgz#2e9399056669f286a681396bc35ae0d7c5c70d16"
 
 angular-ui-router@^0.4.2:
   version "0.4.2"
@@ -34,9 +34,9 @@ angular-ui-router@^0.4.2:
   dependencies:
     angular "^1.0.8"
 
-angular@^1.0.8, angular@^1.6.4:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.4.tgz#03b7b15c01a0802d7e2cf593240e604054dc77fb"
+angular@1.5.8, angular@^1.0.8:
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.5.8.tgz#925a5392b8c212d09572dc446db7e01264e094cb"
 
 ansi-regex@^2.0.0:
   version "2.1.1"

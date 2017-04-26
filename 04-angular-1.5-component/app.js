@@ -1,6 +1,6 @@
 angular.module('myApp', [])
     .component('helloWorld', {
-        template: '{{HelloCtrl.name}}, The {{HelloCtrl.title}} ',
+        templateUrl: 'templates/helloWorld.html',
         bindings: {
             name: '@'
         },
@@ -9,3 +9,18 @@ angular.module('myApp', [])
         },
         controllerAs: 'HelloCtrl'
     });
+
+
+/* Access a parent component's scopes */
+/*angular.module("myApp", [])
+  .component("helloWorld",{
+      template: "Hello {{$ctrl.name}}, I'm {{$ctrl.myName}}!",
+      bindings: { name: '@' },
+      require: {
+        parent: '^parentComponent'
+      },
+      controller: function () {
+       // use this.parent to access required Objects
+       this.parent.foo();
+      }
+  });*/
