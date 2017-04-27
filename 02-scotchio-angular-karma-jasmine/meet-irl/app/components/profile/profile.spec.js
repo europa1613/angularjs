@@ -1,5 +1,5 @@
 describe('components.profile', function() {
-    var $controller, PokemonFactory, $q, $httpBackend;
+    var $controller, PokemonFactory, $q, $httpBackend, $state;
 
     var API = 'http://pokeapi.co/api/v2/pokemon/';
     var RESPONSE_SUCCESS = {
@@ -22,10 +22,11 @@ describe('components.profile', function() {
     beforeEach(angular.mock.module('api.pokemon'));
     beforeEach(angular.mock.module('components.profile'))
 
-    beforeEach(inject(function(_$controller_, _$q_, _$httpBackend_, _Pokemon_) {
+    beforeEach(inject(function(_$controller_, _$q_, _$httpBackend_, _$state_, _Pokemon_) {
         $controller = _$controller_;
         $q = _$q_;
         $httpBackend = _$httpBackend_;
+        $state = _$state_;
         PokemonFactory = _Pokemon_;
     }));
 
@@ -123,5 +124,21 @@ describe('components.profile', function() {
         });
     });
 
+    describe('ProfileController with an invalid resolved user', function() {
+        var ProfileController, singleUser;
 
+        beforeEach(function() {
+            spyOn(PokemonFactory, 'findByName');
+            spyOn($state, 'go');
+
+            ProfileController = $controller('ProfileController', { resolvedUser: singleUser, Pokemon: PokemonFactory, $state: $state });
+
+        });
+
+        it('should redirect to 404 page', function() {
+        	expect(ProfileController.user).toBeUndefined();
+        	expect(PokemonFactory.findByName).not.toHaveBeenCalled();
+        	expect($state.go).toHaveBeenCalledWith('404');
+        });
+    });
 });
