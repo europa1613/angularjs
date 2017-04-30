@@ -3,6 +3,6 @@
     var module = angular.module('psMovies');
 
     module.component('movieList', {
-    	template: '<h1>Hello from movieList component!</h1>'
+    	templateUrl: '/ps-movies/movie-list.component.html'
     });
 }());
