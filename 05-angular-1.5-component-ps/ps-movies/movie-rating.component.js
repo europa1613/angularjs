@@ -8,6 +8,7 @@
         bindings: {
             value: "<"
         },
+        transclude: true,
         controllerAs: 'model',
         controller: function() {
             var model = this;
@@ -18,10 +19,9 @@
             };
 
             model.$onChanges = function(changeObj) {
-            	console.log(changeObj);
-            	model.entries = new Array(model.value);
+                console.log(changeObj);
+                model.entries = new Array(model.value);
             };
         }
     });
-
 }());
