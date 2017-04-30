@@ -1,3 +1,6 @@
 <div>
-	<h3>{{ model.message }}</h3>	
+	<h3>{{ model.message }}</h3>
+	<input class="form-control" type="text" name="message" ng-model="model.message" />
+	<br>
+	<button class="btn btn-primary" ng-click="model.changeMessage()">Change Message</button>
 </div>
