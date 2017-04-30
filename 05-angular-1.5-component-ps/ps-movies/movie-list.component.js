@@ -2,13 +2,34 @@
     'use strict';
     var module = angular.module('psMovies');
 
-    function controller() {
-        var model = this;
-        model.message = 'Hello from Component Controller!'
+    function fecthMovies($http) {
+        return $http.get('/movies.json')
+            .then(function(response) {
+                return response.data;
+            });
+    };
 
-        model.changeMessage = function() {
-            this.message = 'New Message!';
-        }
+    function controller($http) {
+        var model = this;
+        model.movies = [];
+
+        model.$onInit = function() {
+            fecthMovies($http).then(function(movies) {
+                model.movies = movies;
+            });
+        };
+
+        model.upRating = function(movie) {
+            if (movie.rating < 5) {
+                movie.rating += 1;
+            }
+        };
+
+        model.downRating = function(movie) {
+            if (movie.rating > 1) {
+                movie.rating -= 1;
+            }
+        };
     };
 
     module.component('movieList', {
