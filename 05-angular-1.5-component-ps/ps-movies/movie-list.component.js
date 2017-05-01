@@ -32,7 +32,7 @@
         };
 
         model.goTo = function(movieId) {
-            model.$router.navigate(['Details', {id: movieId}]);
+            model.$router.navigate(['Details', { id: movieId }, "Overview"]);
         };
     };
 
