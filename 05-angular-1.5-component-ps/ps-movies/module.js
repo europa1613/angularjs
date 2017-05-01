@@ -1,8 +1,8 @@
 (function() {
     "use strict";
 
-    angular.module('psMovies', ['ngRoute'])
-        .config(function($routeProvider) {
+    angular.module('psMovies', ['ngComponentRouter'])
+        /*.config(function($routeProvider) {
             $routeProvider
                 .when('/list', {
                     template: '<movie-list></movie-list>'
@@ -13,7 +13,8 @@
                 .otherwise({
                     redirectTo: '/list'
                 })
-        })
+        })*/
+        .value('$routerRootComponent', 'movieApp')
         .component('appAbout', {
             template: 'This is about Movies'
         });
