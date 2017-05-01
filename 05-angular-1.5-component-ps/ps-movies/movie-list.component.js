@@ -30,11 +30,18 @@
                 movie.rating -= 1;
             }
         };
+
+        model.goTo = function(movieId) {
+            model.$router.navigate(['Details', {id: movieId}]);
+        };
     };
 
     module.component('movieList', {
         templateUrl: '/ps-movies/movie-list.component.html',
         controllerAs: 'model',
-        controller: controller
+        controller: controller,
+        bindings: {
+            '$router': '<'
+        }
     });
 }());
