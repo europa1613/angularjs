@@ -6,3 +6,11 @@ body {
 .ng-cloak {
     display: none;
 }
+
+accordian .ng-enter {
+	animation: fadeIn 0.5s;
+}
+
+accordian .ng-leave {
+	animation: fadeOut 0.5s;
+}

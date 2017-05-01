@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    angular.module('psMovies', ['ngComponentRouter'])
+    angular.module('psMovies', ['ngComponentRouter', 'ngAnimate'])
         /*.config(function($routeProvider) {
             $routeProvider
                 .when('/list', {
