@@ -10,7 +10,7 @@
             <td> {{movie.title}} </td>
             <td> {{movie.length}} </td>
             <td>
-                <movie-rating value="movie.rating" max="5">
+                <movie-rating value="movie.rating" max="5" set-rating="model.setRating(movie, value)">
                     <!-- <span class="glyphicon glyphicon-star"></span> -->
                 </movie-rating>
             </td>

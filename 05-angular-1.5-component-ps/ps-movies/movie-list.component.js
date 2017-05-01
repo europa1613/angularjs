@@ -34,6 +34,10 @@
         model.goTo = function(movieId) {
             model.$router.navigate(['Details', { id: movieId }, "Overview"]);
         };
+
+        model.setRating = function(movie, newRating) {
+            movie.rating = newRating;
+        };
     };
 
     module.component('movieList', {

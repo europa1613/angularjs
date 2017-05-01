@@ -1,4 +1,5 @@
 <span ng-repeat="entry in model.entries track by $index">
 	<!-- <ng-transclude>*</ng-transclude> -->
-	<span class="glyphicon {{entry}}"></span>
+	<span class="glyphicon {{entry}}" 
+			ng-click="model.setRating({value: $index + 1})"></span>
 </span>

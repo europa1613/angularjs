@@ -16,7 +16,8 @@
         templateUrl: 'ps-movies/movie-rating.component.html',
         bindings: {
             value: '<',
-            max: '<'
+            max: '<',
+            setRating: '&'
         },
         /*transclude: true,*/
         controllerAs: 'model',
