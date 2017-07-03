@@ -8,7 +8,7 @@
 <body ng-init="name='Jon, Snow'">
     <div ng-hide="isHidden">
         Name:
-        <input type="text" ng-model="name" /> {{name}}
+        <input type="text" ng-model="name" /> <span ng-bind="name"></span>
     </div>
     Hide:
     <input type="checkbox" ng-model="isHidden" />
